@@ -4,7 +4,7 @@ const btn = document.querySelectorAll("button");
 const container = document.getElementsByClassName("container");
 
 var index = 0;
-const idlePeriod = 300;
+const idlePeriod = 1500;
 var lastAnimation = 1000;
 const duration = 1000;
 
