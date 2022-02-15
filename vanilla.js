@@ -4,9 +4,9 @@ const btn = document.querySelectorAll("button");
 const container = document.getElementsByClassName("container");
 
 var index = 0;
-const idlePeriod = 1500;
-var lastAnimation = 1000;
-const duration = 1000;
+const idlePeriod = 500;
+var lastAnimation = 500;
+const duration = 200;
 
 console.log("300 milisecond/click");
 console.log("ArrowUp / ArrowDown");
