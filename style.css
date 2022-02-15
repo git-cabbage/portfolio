@@ -13,6 +13,7 @@ html {
 }
 body {
   overflow-y: hidden;
+  color: wheat;
 }
 .container {
   width: 100vw;
@@ -55,7 +56,7 @@ section {
   height: 100vh;
   width: 100vw;
 }
-#content__page1 .introduce {
+#home .introduce {
   color: wheat;
   max-width: 50%;
 }
@@ -103,13 +104,121 @@ section {
 #social a {
   color: white;
 }
-#content__page1 img {
+#home img {
   height: 250px;
   width: 250px;
 
   border: wheat 3px solid;
   border-radius: 15px 50px 15px 50px;
   box-shadow: 20px 25px #00000071;
+}
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.technical,
+.professional {
+  height: 90vh;
+  width: 40vw;
+}
+#skills h1 {
+  text-align: center;
+}
+.tech__content,
+.pro__content {
+  margin-top: 50px;
+}
+.tech__skill {
+  margin-bottom: 25px;
+  width: 90%;
+}
+.skill__top {
+  display: flex;
+  margin-bottom: 10px;
+}
+.skill__top .skill__name {
+  width: 50%;
+}
+.skill__top .skill__percent {
+  width: 50%;
+  text-align: right;
+}
+.skill__bottom {
+  height: 6px;
+  width: 100%;
+
+  border-radius: 30px;
+  background-color: white;
+
+  margin-bottom: 10px;
+}
+.skill__bottom .skill__bar {
+  content: "";
+  display: block;
+
+  height: 6px;
+  width: 80%;
+
+  background-color: #0026ff;
+  border-radius: 30px;
+}
+.skill__bar.p72 {
+  width: 72%;
+}
+.skill__bar.p42 {
+  width: 42%;
+}
+.skill__bar.p34 {
+  width: 34%;
+}
+
+.skill__bar.p25 {
+  width: 25%;
+}
+.pro__skill {
+  width: 50%;
+  height: 50%;
+
+  margin-bottom: 50px;
+  text-align: center;
+  float: left;
+}
+.pro__skill .skill__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+.skill__top .percent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 100px;
+
+  color: black;
+  font-weight: bolder;
+  border-radius: 50%;
+  background-color: #0026ff;
+}
+.percent::after {
+  content: "80%";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90px;
+  height: 90px;
+
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+}
+.pro__skill .skill__bottom {
+  background: none;
 }
 section:first-child {
   justify-content: space-evenly;
@@ -164,10 +273,10 @@ ul#scrollbar {
   border-radius: 50%;
   cursor: pointer;
 }
-li:hover,
+#scrollbar li:hover,
 li.active {
   background-color: wheat;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .button__name {
   display: none;
@@ -177,7 +286,8 @@ li.active {
   text-align: right;
   margin-right: 100px;
 }
-li:hover > .button__name {
+li:hover .button__name {
   display: block;
   color: wheat;
+  transition: 1s ease;
 }

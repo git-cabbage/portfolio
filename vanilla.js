@@ -22,7 +22,7 @@ const onTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
-onTop();
+// onTop();
 
 /* 
     !: logic to call func event click button left page
