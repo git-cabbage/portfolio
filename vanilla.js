@@ -8,7 +8,7 @@ const idlePeriod = 500;
 var lastAnimation = 500;
 const duration = 200;
 
-console.log("300 milisecond/click");
+console.log("200 milisecond/click");
 console.log("ArrowUp / ArrowDown");
 console.log("Scroll");
 console.log("Click Button");
