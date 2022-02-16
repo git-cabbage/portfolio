@@ -13,7 +13,7 @@ html {
 }
 body {
   overflow-y: hidden;
-  color: wheat;
+  color: white;
 }
 .container {
   width: 100vw;
@@ -67,7 +67,7 @@ section {
 
   padding: 50px 20px;
 
-  color: wheat;
+  color: white;
   background-color: #0000004f;
   border-radius: 12px;
 }
@@ -79,6 +79,7 @@ section {
 .introduce p {
   font-size: 20px;
   font-style: italic;
+  text-indent: 2em;
 }
 .introduce #social {
   display: flex;
@@ -116,10 +117,10 @@ section {
   color: white;
 }
 #home img {
-  height: 250px;
-  width: 250px;
+  height: 280px;
+  width: 280px;
 
-  border: wheat 3px solid;
+  border: white 3px solid;
   border-radius: 15px 50px 15px 50px;
   box-shadow: 20px 25px #0000004f;
 }
@@ -312,6 +313,94 @@ section {
     !Page about
 */
 #about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+.about__title {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  width: 70%;
+  height: 60%;
+
+  background-color: #00000079;
+  border-radius: 10px;
+}
+.about__content .about__left {
+  width: 60%;
+}
+.about__left .left__title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+
+  margin: 20px 0;
+}
+.about__left .left__content {
+  height: 260px;
+  width: 80%;
+
+  margin-left: 70px;
+  text-indent: 3em;
+  line-height: 1.5;
+  text-align: left;
+}
+.left__content p {
+  margin: 30px 0;
+}
+.about__left .btn__download {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 50px;
+
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.btn__download .btn__align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: #2f4fff;
+  margin-right: 40px;
+}
+.btn__download a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn__download i {
+  color: white;
+  font-size: 18px;
+}
+.about__content .about__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+}
+.about__right img {
+  width: 350px;
+  height: 350px;
+
+  /* border: 2px solid white;
+  border-radius: 20px 0 20px 0; */
 }
 /* 
     !Page contact
@@ -420,25 +509,25 @@ ul#scrollbar {
   height: 10px;
 
   margin-top: 50px;
-  border: 2px wheat solid;
+  border: 2px white solid;
   border-radius: 50%;
   cursor: pointer;
 }
 #scrollbar li:hover,
 li.active {
-  background-color: wheat;
+  background-color: white;
   transition: 0.5s ease-in-out;
 }
 .button__name {
   display: none;
   min-width: 70px;
 
-  color: wheat;
+  color: white;
   text-align: right;
   margin-right: 100px;
 }
 li:hover .button__name {
   display: block;
-  color: wheat;
+  color: white;
   transition: 1s ease;
 }
